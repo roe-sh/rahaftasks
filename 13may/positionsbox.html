@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .stat,
+      .re,
+      .po {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>position: static</p>
+    <div
+      style="position: relative; border: 1px dotted black; width: fit-content"
+    >
+      <div class="stat">one</div>
+      <div class="stat" style="background-color: green; position: static">
+        Two
+      </div>
+      <div class="stat">Three</div>
+      <div class="stat">Foure</div>
+    </div>
+    <br />
+    <p>position relative</p>
+
+    <div
+      style="position: relative; border: 1px dotted black; width: fit-content"
+    >
+      <div class="re">one</div>
+      <div
+        class="re"
+        style="
+          background-color: green;
+          position: relative;
+          left: 20px;
+          top: 20px;
+        "
+      >
+        Two
+      </div>
+      <div class="re">Three</div>
+      <div class="re">Foure</div>
+    </div>
+    <br />
+    <p>position: absolute</p>
+    <div
+      style="position: relative; border: 1px dotted black; width: fit-content"
+    >
+      <div class="po">one</div>
+      <div
+        class="po"
+        style="
+          background-color: green;
+          position: absolute;
+          left: 5px;
+          top: 20px;
+        "
+      >
+        two
+      </div>
+      <div class="po">Three</div>
+      <div class="po">Foure</div>
+    </div>
+  </body>
+</html>

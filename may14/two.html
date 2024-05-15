@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <style>
+    /*parent elements */
+    .container {
+
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  
+  
+}
+/* CHILDREN ELEMENTS */
+.box-1,
+.box-2
+{
+  width: 10%;
+  height: 110vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: lightgray;
+}
+#main div:nth-of-type(1) {flex-grow: 1;} 
+#main div:nth-of-type(2) {flex-grow: 1;}
+.box-1 {
+  background-color: red;
+  line-height: 500px;
+
+}
+
+.box-2 {
+  background-color: blue;
+  line-height: 500px;
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+   <div class="container">
+    <div class="box-1" >first part</div>
+    <div class="box-2">second part</div>
+   </div>
+</body>
+</html>
